@@ -13,8 +13,8 @@
 }
 
 .modalContent {
-  background: var(--background, #ffffff);
-  color: var(--foreground, #1a1a1a);
+  background: $light-background;
+  color: $light-foreground;
   padding: 2rem;
   border-radius: 1rem;
   max-width: 800px;
@@ -33,7 +33,7 @@
   background: none;
   border: none;
   font-size: 2rem;
-  color: var(--foreground, #1a1a1a);
+  color: $light-foreground;
   cursor: pointer;
   transition: opacity 0.3s ease;
 
@@ -135,6 +135,6 @@ h2 {
   }
 
   .closeButton {
-    color: white;
+    color: $light-foreground;
   }
 }

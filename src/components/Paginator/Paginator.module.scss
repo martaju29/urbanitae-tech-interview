@@ -5,16 +5,16 @@
   gap: 1rem;
 
   button {
-    background: var(--background);
-    color: var(--foreground);
-    border: 1px solid var(--border-color);
+    background: $light-background;
+    color: $light-foreground;
+    border: 1px solid $border-color;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
 
     &:hover:not(:disabled) {
-      background: var(--accent-color);
+      background: $accent-color;
       color: white;
     }
 
