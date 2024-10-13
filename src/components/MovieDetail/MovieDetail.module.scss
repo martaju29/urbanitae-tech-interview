@@ -119,3 +119,10 @@ h2 {
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .modalContent {
+    height: 70vh;
+    overflow-y: auto;
+  }
+}
