@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef } from 'react'
+import { CSSProperties, FC, useEffect, useRef } from 'react'
 import styles from './MovieDetail.module.scss'
 import { useMovieDetail } from '../../hooks/useMovieDetail'
 import { Star } from '../../icons/Star'
@@ -40,9 +40,16 @@ export const MovieDetail: FC<MovieDetailProps> = ({ onClose }) => {
     }
   }, [onClose])
 
+  const modalStyle: CSSProperties = {
+    '--poster-url': `url('https://image.tmdb.org/t/p/w500${movieDetail?.poster_path}')` as string
+  }
+
   return (
     <div className={styles.modalOverlay}>
-      <div className={styles.modalContent} ref={modalRef}>
+      <div 
+        className={styles.modalContent}
+        style={modalStyle}
+        ref={modalRef}>
         <button className={styles.closeButton} onClick={onClose} aria-label='Close modal'>
           &times;
         </button>

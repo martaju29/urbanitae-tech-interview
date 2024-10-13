@@ -18,8 +18,8 @@
   padding: 2rem;
   border-radius: 1rem;
   max-width: 800px;
-  width: 90%;
-  max-height: 90vh;
+  width: 80%;
+  max-height: 60vh;
   overflow-y: auto;
   position: relative;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -46,10 +46,6 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
 
   img {
     width: 100%;
@@ -88,15 +84,11 @@
   margin-bottom: 1rem;
 }
 
-.star {
-  color: gold;
-}
-
 h2 {
   font-size: 2rem;
   margin-top: 0;
   margin-bottom: 1rem;
-  border-bottom: 2px solid var(--accent-color, #3498db);
+  border-bottom: 2px solid $accent-color;
   padding-bottom: 0.5rem;
 }
 
@@ -122,7 +114,27 @@ h2 {
 
 @media (max-width: 768px) {
   .modalContent {
-    height: 70vh;
+    height: 80vh;
     overflow-y: auto;
+    background-image: var(--poster-url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+
+  .modalGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    img {
+      display: none;
+    }
+  }
+
+  .closeButton {
+    color: white;
   }
 }
