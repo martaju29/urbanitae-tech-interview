@@ -1,7 +1,6 @@
-import { MovieDetail } from '../models/movieDetail';
-import { Movie, MovieList } from '../models/movieList';
+import { MovieDetail } from '../models/movieDetail'
+import { Movie, MovieList } from '../models/movieList'
 const API_URL = 'https://api.themoviedb.org/3'
-// https://api.themoviedb.org/3/movie/popular?language=en-US&page=1
 
 export const fetchMovies = async ({ pageParam = 1 }: { pageParam?: number }) => {
   try {

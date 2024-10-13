@@ -39,7 +39,7 @@ export const CastSchema = z.object({
     department: DepartmentSchema.optional(),
     job: z.string().optional(),
 })
-export type Cast = z.infer<typeof CastSchema>;
+export type Cast = z.infer<typeof CastSchema>
 
 export const GenreSchema = z.object({
     id: z.number(),

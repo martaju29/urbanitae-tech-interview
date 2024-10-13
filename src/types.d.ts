@@ -3,5 +3,5 @@ export type Icon = {
 }
 
 interface CustomCSSProperties extends React.CSSProperties {
-  '--poster-url'?: string;
+  '--poster-url'?: string
 }
