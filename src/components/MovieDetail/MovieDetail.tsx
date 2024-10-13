@@ -4,6 +4,7 @@ import { useMovieDetail } from '../../hooks/useMovieDetail'
 import { Star } from '../../icons/Star'
 import { Loader } from '../Loader/Loader'
 import { ErrorMessage } from '../ErrorMessage/ErrorMessage'
+import { CustomCSSProperties } from '../../types'
 
 interface MovieDetailProps {
   onClose: () => void
@@ -40,8 +41,8 @@ export const MovieDetail: FC<MovieDetailProps> = ({ onClose }) => {
     }
   }, [onClose])
 
-  const modalStyle: any = {
-    '--poster-url': `url('https://image.tmdb.org/t/p/w500${movieDetail?.poster_path}')` as string
+  const modalStyle: CustomCSSProperties = {
+    '--poster-url': `url('https://image.tmdb.org/t/p/w500${movieDetail?.poster_path}')`
   }
 
   return (
