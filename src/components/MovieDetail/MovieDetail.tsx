@@ -1,4 +1,4 @@
-import { CSSProperties, FC, useEffect, useRef } from 'react'
+import { FC, useEffect, useRef } from 'react'
 import styles from './MovieDetail.module.scss'
 import { useMovieDetail } from '../../hooks/useMovieDetail'
 import { Star } from '../../icons/Star'
@@ -40,7 +40,7 @@ export const MovieDetail: FC<MovieDetailProps> = ({ onClose }) => {
     }
   }, [onClose])
 
-  const modalStyle: CSSProperties = {
+  const modalStyle: any = {
     '--poster-url': `url('https://image.tmdb.org/t/p/w500${movieDetail?.poster_path}')` as string
   }
 
