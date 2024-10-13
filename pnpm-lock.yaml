@@ -57,6 +57,9 @@ importers:
       vite:
         specifier: ^5.4.8
         version: 5.4.8(sass@1.79.4)
+      vite-plugin-gh-pages:
+        specifier: ^1.0.0
+        version: 1.0.0
       vitest:
         specifier: ^2.1.2
         version: 2.1.2(@vitest/ui@2.1.2)(happy-dom@15.7.4)(jsdom@25.0.1)(sass@1.79.4)
@@ -1084,6 +1087,9 @@ packages:
     resolution: {integrity: sha512-HPcGNN5g/7I2OtPjLqgOtCRu/qhVvBxTUD3qzitmL0SrG1cWFzxzhMDWussxSbrRYWqnKf8P2jiNhPMSN+ymsQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
+
+  vite-plugin-gh-pages@1.0.0:
+    resolution: {integrity: sha512-/9Hpu09St4ycyaHio2QTjzdvUBLDXSSXqQQKHo9QtdUyTsjaIFTI0IRenGBPfb2JJKq9GT74OkGPw1KFtH6DGQ==}
 
   vite@5.4.8:
     resolution: {integrity: sha512-FqrItQ4DT1NC4zCUqMB4c4AZORMKIa0m8/URVCZ77OZ/QSNeJ54bU1vrFADbDsuwfIPcgknRkmqakQcgnL4GiQ==}
@@ -2129,6 +2135,10 @@ snapshots:
       - sugarss
       - supports-color
       - terser
+
+  vite-plugin-gh-pages@1.0.0:
+    dependencies:
+      gh-pages: 6.2.0
 
   vite@5.4.8(sass@1.79.4):
     dependencies:

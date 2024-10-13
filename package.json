@@ -10,8 +10,7 @@
     "lint": "npx @biomejs/biome lint",
     "preview": "vite preview",
     "test": "vitest",
-    "predeploy": "pnpm build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "vite build && pnpm gh-pages"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.59.9",
@@ -32,6 +31,7 @@
     "sass": "^1.79.4",
     "typescript": "^5.5.3",
     "vite": "^5.4.8",
+    "vite-plugin-gh-pages": "^1.0.0",
     "vitest": "^2.1.2"
   }
 }
