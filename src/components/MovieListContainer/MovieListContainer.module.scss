@@ -1,0 +1,25 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.noMovies {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
+:global(.focus-visible) {
+  .container *:focus {
+    outline: 2px solid $accent-color;
+    outline-offset: 2px;
+  }
+}

@@ -1,0 +1,67 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $container-padding;
+}
+
+.movieGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: $grid-gap;
+}
+
+.movieCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-light;
+  transition: all $transition-speed $transition-easing;
+  background: var(--card-background);
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $box-shadow-hover;
+  }
+
+  .moviePoster {
+    position: relative;
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform $transition-speed $transition-easing;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  .movieInfo {
+    padding: $card-padding;
+    background: var(--card-background);
+  }
+
+  .movieTitle {
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+    margin-bottom: 0.5rem;
+    color: var(--foreground);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .movieRating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: $font-size-base;
+    color: var(--foreground);
+  }
+}
