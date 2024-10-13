@@ -57,7 +57,7 @@ pnpm install
 ```
 
 ### Paso 3: Configurar variables de entorno
-El proyecto requiere una clave de API de The Movie Database (TMDb) para funcionar. Añade el API_KEY al archivo .env
+El proyecto requiere una clave de API de The Movie Database (TMDb) para funcionar. Añade el API_KEY al archivo `.env`
 
 ```bash
 VITE_API_KEY={API_KEY}
