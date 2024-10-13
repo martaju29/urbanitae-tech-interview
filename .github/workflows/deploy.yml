@@ -24,7 +24,9 @@ jobs:
         run: pnpm install
 
       - name: Build project
-        run: pnpm run build
+        run: |
+          echo "VITE_API_KEY=${{ secrets.API_KEY }}" > .env
+          pnpm run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
