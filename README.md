@@ -2,6 +2,8 @@
 
 Este proyecto ha sido desarrollado como parte de una prueba técnica para **Urbanitae**. El objetivo es mostrar un listado de películas populares, permitiendo la navegación por las diferentes páginas del catálogo de películas, y la visualización del detalle de cada película, incluyendo actores, director, sinopsis y más.
 
+[Demo de la aplicación](https://martaju29.github.io/urbanitae-tech-interview/)
+
 ## 🚀 Tecnologías Utilizadas
 
 Este proyecto ha sido desarrollado utilizando las siguientes tecnologías:
