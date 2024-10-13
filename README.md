@@ -73,7 +73,7 @@ pnpm run dev
 ```
 
 ### Paso 5: Ejecutar las pruebas
-El proyecto incluye pruebas unitarias y de integración que se pueden ejecutar con:
+El proyecto incluye pruebas unitarias que se pueden ejecutar con:
 ```bash
 pnpm run test
 ```
